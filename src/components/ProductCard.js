@@ -11,7 +11,7 @@ const ProductCard = ({ data, category }) => {
             <Link href={`/${category == "services" ? "services" : "products"}/${data.attributes.slug}`} className={styles.item}>
                 <div className={styles.image}>
                     <h4>{data.attributes.name}</h4>
-                    <Image width={1000} height={1000} src={`https://api.vmetalsolutions.com` + data.attributes.image.data[0].attributes.url} className='img-fluid' />
+                    <Image width={1000} height={1000} src={`https://api.vmetalsolutions.com` + data.attributes.image.data[0].attributes.url} className='img-fluid' alt='' />
                     <div className={styles.icon_cont}>
                         <IoIosArrowRoundForward className={styles.icon} />
                     </div>

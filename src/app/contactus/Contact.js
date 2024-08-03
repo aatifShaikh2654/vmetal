@@ -112,8 +112,8 @@ const Contact = () => {
                     <div className="col-lg-6 col-12">
                         <div className={styles.content}>
                             <span>Contact Us</span>
-                            <h1>Let's Build Something Great Together!</h1>
-                            <p>When it comes to steel, we're your trusted partner. Whether placing an order, discussing a custom project, or asking a question, we're here to help. </p>
+                            <h1>Let&apos;s Build Something Great Together!</h1>
+                            <p>When it comes to steel, we&apos;re your trusted partner. Whether placing an order, discussing a custom project, or asking a question, we&apos;re here to help. </p>
                         </div>
                     </div>
                     <div className="col-lg-6 col-12">

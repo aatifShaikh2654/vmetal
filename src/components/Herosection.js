@@ -57,14 +57,14 @@ const Herosection = () => {
         <>
             <div className="herosection container-fluid padd-x">
                 <div className="asset">
-                    <img src="/images/asset1.avif" className='img-fluid' />
+                    <Image width={1000} height={1000} src="/images/asset1.avif" className='img-fluid' alt='' />
                 </div>
 
                 <div className="row">
                     <div className="col-lg-6">
                         <div className="content">
                             <h1 className='head'>Forging the Future of Steel Innovation</h1>
-                            <p>Forging steel's future means pioneering sustainable technologies, enhancing strength, and revolutionizing industrial applications for resilience.</p>
+                            <p>Forging steel&apos;s future means pioneering sustainable technologies, enhancing strength, and revolutionizing industrial applications for resilience.</p>
                             <div className="mt-3">
                                 <Link href="" className='button'>Read More</Link>
                             </div>

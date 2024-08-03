@@ -14,6 +14,7 @@ import { Autoplay, EffectFade, Navigation, Pagination } from 'swiper/modules';
 import axios from 'axios';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import Image from 'next/image';
 
 const Testimonial = () => {
 
@@ -71,7 +72,7 @@ const Testimonial = () => {
     <>
       <div className={`${styles.testimonial}`}>
         <div className={styles.asset}>
-          <img src="/images/asset2.avif" className='img-fluid' alt="" />
+          <Image width={1000} height={1000} src="/images/asset2.avif" className='img-fluid' alt="" />
         </div>
         <span className={styles.subhead}>Testimonial</span>
         <div className={styles.swiper_container}>
@@ -88,9 +89,9 @@ const Testimonial = () => {
             {reviews && reviews.map((item, index) => {
               return <SwiperSlide key={index} className='d-flex justify-content-center align-items-center'>
                 <div className={styles.slide}>
-                  <p>"{item.attributes.description}"</p>
+                  <p>&quot;{item.attributes.description}&quot;</p>
                   <div className={styles.user}>
-                    {item.attributes.image ? <img src={item.attributes.image.data.attributes.url} alt={item.attributes.name} />
+                    {item.attributes.image ? <Image width={1000} heigth={1000} src={item.attributes.image.data.attributes.url} alt={item.attributes.name} />
                       : <FaUserCircle className={styles.userImage} />}
                     <div>
                       <h5>{item.attributes.name}</h5>
