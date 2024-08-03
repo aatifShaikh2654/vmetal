@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from '@/app/styles/footer.module.css'
 import Link from 'next/link'
 import { useGSAP } from '@gsap/react'
@@ -39,8 +39,9 @@ const Footer = () => {
 
       })
     }
-
   })
+
+
 
   return (
     <>
@@ -90,9 +91,9 @@ const Footer = () => {
                 <li><Link href="">523, First Floor, Road No. 14, Kathwada G.I.D.C., Kathwada, Ahmedabad- 382430</Link></li>
               </ul>
               <ul className={styles.socialMedia}>
-                <li><Link href=""><IoLogoWhatsapp className={styles.socialIcon} /></Link></li>
-                <li><Link href=""><IoLogoInstagram className={styles.socialIcon} /></Link></li>
-                <li><Link href=""><IoLogoLinkedin className={styles.socialIcon} /></Link></li>
+                <li><Link href="//api.whatsapp.com/send?phone=9727015624"><IoLogoWhatsapp className={styles.socialIcon} /></Link></li>
+                <li><Link href="https://instagram.com/v_metal_solutions?igshid=MzRlODBiNWFlZA=="><IoLogoInstagram className={styles.socialIcon} /></Link></li>
+                <li><Link href="https://www.linkedin.com/company/v-metal-solutions-inc/"><IoLogoLinkedin className={styles.socialIcon} /></Link></li>
               </ul>
             </div>
           </div>

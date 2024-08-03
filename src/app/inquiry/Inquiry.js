@@ -7,6 +7,7 @@ import { HiOutlinePhone } from "react-icons/hi";
 import { IoMailOutline } from "react-icons/io5";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import axios from 'axios';
 
 const Inquiry = () => {
 
@@ -75,9 +76,6 @@ const Inquiry = () => {
         createScrollTrigger(`.${styles.inquiry}`, ` .${styles.content}`, -150, 1.5);
         createScrollTrigger(`.${styles.inquiry}`, ` .col-lg-8`, 150, 1.5);
     })
-
-
-
 
 
     return (
@@ -211,7 +209,7 @@ const Inquiry = () => {
                                         </div>
                                     </div>
                                     <div className="d-flex align-items-center">
-                                        <button type='button' className='button2 me-2 rounded-0'>E Brochure</button>
+                                        <Link href={"https://res.cloudinary.com/domdsbthb/image/upload/v1663735499/V_Metal_Solutions_Inc_3d5e6a4f6c.pdf"} type='button' className='button2 me-2 rounded-0'>E Brochure</Link>
                                         <button type='submit' className='button'>Submit</button>
                                     </div>
                                 </div>
