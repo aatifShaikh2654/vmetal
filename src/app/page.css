@@ -1,0 +1,316 @@
+@font-face {
+    font-family: thin;
+    src: url('../../public/fonts/pfdintextcomppro_thin-webfont.woff2');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('../../public/fonts/pfdintextcomppro__medium-webfont.woff2');
+}
+
+.hero-padd {
+    padding-left: 8vw;
+    padding-right: 8vw;
+}
+
+.herosection {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.herosection .content {
+    padding-top: 5vw;
+    height: 100%;
+    position: relative;
+    z-index: 3;
+}
+
+.herosection h1 {
+    font-family: medium;
+    font-size: 7vw;
+    line-height: 90%;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.herosection p {
+    font-size: 1.2vw;
+    color: var(--grey1);
+    margin-bottom: 0px !important;
+}
+
+.herosection .images {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.herosection .images img:first-child {
+    position: absolute;
+    top: -50px;
+    right: 0;
+    width: 80%;
+    height: 80%;
+    z-index: -1;
+}
+
+.herosection .images img {
+    width: 75%;
+    margin-top: 50px;
+}
+
+.herosection .asset {
+    position: absolute;
+    top: 0;
+    margin: auto 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 30%;
+    pointer-events: none;
+    transform: rotate(180deg) rotateX(180deg);
+}
+
+.herosection .arrow-down {
+    position: absolute;
+    right: 5%;
+    z-index: 999;
+    bottom: 10%;
+}
+
+@media (max-width: 999px) {
+    .herosection h1 {
+        font-size: 15vw;
+    }
+
+    .herosection p {
+        font-size: 1rem;
+    }
+
+    .herosection .content {
+        margin-bottom: 50px;
+    }
+
+    .herosection .images {
+        align-items: start;
+        justify-content: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .herosection .asset {
+        width: 100%;
+    }
+}
+
+@media (max-width: 499px) {
+
+    .herosection p {
+        font-size: .9rem;
+    }
+}
+
+
+/* scroll section csss herere  */
+
+.scroll-section {
+    height: 90vh;
+    background-color: var(--accent);
+    color: var(--bg-color);
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.scroll-section .scroll-content {
+    padding: 7vw 5vw;
+}
+
+.scroll-section h2 {
+    font-family: medium;
+    font-size: 3vw;
+    letter-spacing: .5px;
+    line-height: 2.8vw;
+}
+
+.scroll-section p {
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+}
+
+.scroll-section .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    gap: 20px;
+}
+
+.scroll-section .images-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 60%;
+    margin-top: -50px;
+}
+
+.scroll-section .images-1 img:nth-child(2) {
+    width: 70%;
+    align-self: flex-end;
+}
+
+
+.scroll-section .images-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    margin-top: -20px;
+    margin-right: -40px;
+}
+
+.scroll-section .images-2 img:nth-child(1) {
+    width: 80%;
+}
+
+@media (max-width: 999px) {
+    .scroll-section {
+        height: 100%;
+        background: none;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+
+    .scroll-section .scroll-content {
+        padding: 5vw;
+        background-color: var(--accent);
+        color: var(--bg-color);
+    }
+
+    .scroll-section .images-1 {
+        margin-top: 50px;
+    }
+
+    .scroll-section .images-2 {
+        margin-right: 0px;
+    }
+
+    .scroll-section .scroll-content h2 {
+        font-size: 3rem;
+        line-height: 90%;
+    }
+
+    .scroll-section .scroll-content p {
+        font-size: 1rem;
+        line-height: 130%;
+    }
+}
+
+@media (max-width: 768px) {
+    .scroll-section {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .scroll-section .scroll-content {
+        padding: 40px !important;
+    }
+
+    .scroll-section .images {
+        gap: 10px;
+    }
+
+    .scroll-section .images-1 {
+        gap: 10px;
+    }
+
+    .scroll-section .images-2 {
+        gap: 10px;
+    }
+
+    .scroll-section .images-1 img:nth-child(2) {
+        width: 100%;
+    }
+
+    .scroll-section .images-2 img:nth-child(1) {
+        width: 100%;
+    }
+
+    .scroll-section .scroll-content p {
+        font-size: .9rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .scroll-section {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .scroll-section .scroll-content {
+        padding: 40px 30px !important;
+    }
+
+    .scroll-section .scroll-content h2 {
+        font-size: 2rem;
+    }
+}
+
+/* section css herherhe  */
+
+.section-1 {
+    margin: 30px 0;
+}
+
+.section-1 .section-content h3 {
+    font-family: medium;
+    font-size: 2.8vw;
+}
+
+.section-1 .section-content p {
+    font-size: 1.2vw;
+    color: var(--grey1);
+}
+
+.section-1 .section-content .section-icon {
+    color: var(--accent);
+    font-size: 1.3vw;
+}
+
+.section-1 .section-content .section-line {
+    background-color: var(--gray-color);
+    width: 100%;
+    opacity: .5;
+}
+
+@media (max-width: 1199px) {
+    .section-1 .section-content h3 {
+        font-size: 2.4rem;
+    }
+
+    .section-1 .section-content p {
+        font-size: 1rem;
+    }
+
+    .section-1 .section-content .section-icon {
+        color: var(--accent);
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 999px) {
+    .section-1 {
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-1 {
+        margin: 30px 0;
+    }
+}

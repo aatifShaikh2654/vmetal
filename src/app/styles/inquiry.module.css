@@ -1,0 +1,59 @@
+@font-face {
+    font-family: thin;
+    src: url('../../../public/fonts/pfdintextcomppro_thin-webfont.woff2');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('../../../public/fonts/pfdintextcomppro__medium-webfont.woff2');
+}
+
+.inquiry {
+    margin: 30px 0;
+    position: relative;
+}
+
+.inquiry h1 {
+    font-size: 4vw;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-family: medium;
+    margin-bottom: 20px;
+}
+
+.inquiry .content {
+    background-color: var(--accent);
+    color: var(--bg-color);
+    padding: 3vw;
+    position: sticky;
+}
+
+.inquiry a {
+    text-decoration: none;
+    color: var(--bg-color);
+    font-size: 1.3vw;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.inquiry a .icon {
+    color: var(--accent2);
+    font-size: 1.4em;
+}
+
+@media (max-width: 999px) {
+    .inquiry h1 {
+        font-size: 4rem;
+    }
+
+    .inquiry .content {
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .inquiry a {
+        font-size: 1.2rem;
+    }
+}

@@ -1,0 +1,199 @@
+@font-face {
+    font-family: thin;
+    src: url('../../../public/fonts/pfdintextcomppro_thin-webfont.woff2');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('../../../public/fonts/pfdintextcomppro__medium-webfont.woff2');
+}
+
+.hero {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 100%;
+    background-color: var(--accent);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero .content {
+    padding: 5vw;
+    overflow: hidden;
+    color: var(--bg-color);
+    height: auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero .content_img {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .asset {
+    position: absolute;
+    bottom: -32%;
+    left: -25%;
+    transform: rotate(180deg);
+    opacity: .5;
+    pointer-events: none;
+    width: 50%;
+    height: 50%;
+}
+
+.hero .content h1 {
+    font-family: medium;
+    font-size: 3.5vw;
+    letter-spacing: .5px;
+}
+
+.hero .content p {
+    font-size: 1.2vw;
+    font-weight: 300;
+}
+
+@media (max-width: 1199px) {
+    .hero .content {
+        padding: 50px;
+    }
+
+    .hero .content h1 {
+        font-size: 3rem;
+    }
+
+    .hero .content p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 999px) {
+    .hero .content_img {
+        height: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero .asset {
+        position: absolute;
+        top: -32%;
+        left: -40%;
+        opacity: .5;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* content_container css herheh r */
+.content_container {
+    margin: 40px 0;
+}
+
+.content_container span {
+    font-size: 1.5vw;
+    font-weight: 600;
+    color: var(--grey1);
+    text-transform: uppercase;
+}
+
+.content_container h4 {
+    font-size: 2.8vw;
+    line-height: 100%;
+    font-family: medium;
+}
+
+.content_container p {
+    font-size: 1.25vw;
+    font-weight: 400;
+    text-align: justify;
+}
+
+@media (max-width: 1199px) {
+    .content_container span {
+        font-size: 1.4rem;
+    }
+
+    .content_container h4 {
+        font-size: 2.5rem;
+    }
+
+    .content_container p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 999px) {
+    .content_container span {
+        font-size: 1.3rem;
+    }
+
+    .content_container h4 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .content_container h4 {
+        font-size: 1.7rem;
+    }
+
+    .hero .content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero .content {
+        padding: 20px 30px;
+    }
+}
+
+
+/* table csss herhere  */
+
+.table {
+    width: 100%;
+    padding: 10px 25px;
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.table table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th {
+    color: var(--accent);
+    font-family: medium;
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 5px 0;
+    letter-spacing: .5px;
+    border-bottom: 1px solid #eee;
+}
+
+.table tr td {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.table tr td p {
+    font-size: 1.2vw;
+    margin-bottom: 0px !important;
+}
+
+.table tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 1199px) {
+    .table th {
+        font-size: 1.5rem;
+    }
+
+    .table tr td p{
+        font-size: 1.1rem;
+    }
+}

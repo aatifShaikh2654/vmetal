@@ -1,0 +1,154 @@
+.testimonial {
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    gap: 50px;
+    position: relative;
+}
+
+.testimonial .asset {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 70%;
+    margin: auto;
+    pointer-events: none;
+    transform: rotate(180deg);
+}
+
+
+.subhead {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #848484;
+    letter-spacing: 1px;
+}
+
+.testimonial .swiper_container {
+    width: 50vw;
+    height: 100%;
+}
+
+.testimonial .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.testimonial .slide p {
+    font-size: 2vw;
+    text-align: center;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.testimonial .slide img {
+    width: 7vw;
+    border-right: 1px solid #ddd;
+    padding-right: 20px;
+
+}
+
+.testimonial .user {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial .user .userImage {
+    font-size: 5vw;
+    padding-right: 20px;
+    color: var(--grey1);
+    border-right: 1px solid #ddd;
+}
+
+.testimonial .user h5 {
+    margin-bottom: 0px;
+    font-size: 1.4vw;
+}
+
+.testimonial .user span {
+    font-size: 1.2vw;
+    color: var(--grey1);
+}
+
+@media (max-width: 1199px) {
+
+
+    .subhead {
+        font-size: 1.15rem;
+    }
+
+    .testimonial .user h5 {
+        font-size: 1.2rem;
+    }
+
+    .testimonial .user span {
+        font-size: 1.1rem;
+    }
+
+    .testimonial .user .userImage {
+        font-size: 5rem;
+    }
+
+    .testimonial .slide p {
+        font-size: 1.8rem;
+    }
+
+    .testimonial .slide img {
+        width: 80px;
+    }
+}
+
+@media (max-width: 999px) {
+
+    .testimonial .swiper_container {
+        width: 80%;
+    }
+
+    .testimonial .subhead {
+        font-size: 1.1rem;
+    }
+
+    .testimonial .user h5 {
+        font-size: 1.1rem;
+    }
+
+    .testimonial .user span {
+        font-size: 1rem;
+    }
+
+    .testimonial .user .userImage {
+        font-size: 4rem;
+    }
+
+    .testimonial .slide p {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonial .swiper_container {
+        width: 100%;
+    }
+
+    .testimonial .asset {
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 499px) {
+    .testimonial {
+        gap: 30px;
+        padding: 50px 20px;
+    }
+}

@@ -1,0 +1,92 @@
+@font-face {
+    font-family: thin;
+    src: url('../../../public/fonts/pfdintextcomppro_thin-webfont.woff2');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('../../../public/fonts/pfdintextcomppro__medium-webfont.woff2');
+}
+
+
+.uses {
+    margin: 30px 0;
+}
+
+.uses h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    font-family: medium;
+    margin-bottom: 0px !important;
+}
+
+.uses p {
+    font-size: 1.2vw;
+    color: var(--grey1);
+}
+
+.uses h4 {
+    font-size: 2vw;
+    letter-spacing: .5px;
+    font-family: medium;
+}
+
+.uses ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.uses ul li {
+    font-size: 1.2vw;
+    line-height: 170%;
+    margin-right: 2.5vw;
+    list-style-type: none;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.uses ul li:hover {
+    color: var(--accent2);
+}
+
+.uses ul li::before {
+    content: "\2022";
+    position: absolute;
+    left: -1vw;
+    top: 0;
+    color: var(--accent);
+    bottom: 0;
+}
+
+@media (max-width: 999px) {
+    .uses h1 {
+        font-size: 5rem;
+    }
+
+    .uses p {
+        font-size: 1.2rem;
+    }
+
+    .uses h4 {
+        font-size: 2rem;
+    }
+
+    .uses ul li {
+        font-size: 1.2rem;
+        margin-right: 40px;
+    }
+
+    .uses ul li::before {
+        left: -14px;
+    }
+}
+
+@media (max-width: 499px) {
+    .uses h1{
+        font-size: 3.5rem;
+    }
+}

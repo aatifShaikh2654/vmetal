@@ -1,0 +1,49 @@
+@font-face {
+    font-family: thin;
+    src: url('../../../public/fonts/pfdintextcomppro_thin-webfont.woff2');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('../../../public/fonts/pfdintextcomppro__medium-webfont.woff2');
+}
+
+
+.service {
+    height: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+.service .content h1 {
+    font-family: medium;
+    font-size: 4vw;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.service .content p {
+    font-size: 1.3vw;
+    color: var(--grey1);
+}
+
+@media (max-width: 999px) {
+    .service .content h1 {
+        font-size: 4rem;
+    }
+    .service .content p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media (max-width: 499px) {
+    .service .content h1 {
+        font-size: 3rem;
+    }
+    .service .content p {
+        font-size: 1rem;
+    }
+}
+

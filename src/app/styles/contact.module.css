@@ -1,0 +1,322 @@
+@font-face {
+    font-family: thin;
+    src: url('../../../public/fonts/pfdintextcomppro_thin-webfont.woff2');
+}
+
+@font-face {
+    font-family: medium;
+    src: url('../../../public/fonts/pfdintextcomppro__medium-webfont.woff2');
+}
+
+
+.contact {
+    height: 100%;
+    margin: 30px 0;
+}
+
+.contact .content {
+    padding-right: 4vw;
+}
+
+.contact .content span {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #848484;
+    letter-spacing: 1px;
+}
+
+.contact .content h1 {
+    font-family: medium;
+    font-size: 5vw;
+    line-height: 100%;
+    margin: 10px 0;
+}
+
+.contact .content p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    color: var(--grey1);
+}
+
+.contact .form_container {
+    padding: 3.5vw;
+    width: 100%;
+}
+
+.contact .item {
+    background-color: var(--accent);
+    padding: 5vw;
+    color: var(--bg-color);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.contact .item .item_content {
+    position: relative;
+    z-index: 2;
+}
+
+.contact .item .asset {
+    position: absolute;
+    top: 0;
+    right: -30%;
+    width: 100%;
+    height: 80%;
+    opacity: .6;
+    transform: rotate(180deg);
+}
+
+.contact .item h2 {
+    font-size: 3vw;
+    font-family: medium;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    line-height: 100%;
+    margin-bottom: 10px;
+}
+
+.contact .item a {
+    color: var(--bg-color);
+    text-decoration: none;
+    font-size: 1.2vw;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.contact .item a p {
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.contact .item a .icon {
+    font-size: 1.7em;
+    color: var(--accent2);
+}
+
+.contact .item.map {
+    padding: 0px;
+}
+
+/* .contact .item.map::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    pointer-events: none;
+    background-color: var(--text-color);
+    opacity: .5;
+} */
+
+.contact .item.map .map_inner {
+    width: 100%;
+    height: 20vw;
+    padding-bottom: 0px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    margin-bottom: -6px;
+}
+
+@media (max-width: 999px) {
+    .contact .content span {
+        font-size: .9rem;
+    }
+
+    .contact .content {
+        padding-right: 0px;
+    }
+
+    .contact .content h1 {
+        font-size: 5rem;
+    }
+
+    .contact .content p {
+        font-size: 1.1rem;
+    }
+
+    .contact .form_container {
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+    .contact .item {
+        padding: 50px;
+    }
+
+    .contact .item h2 {
+        font-size: 3rem;
+    }
+
+    .contact .item a {
+        font-size: 1.2rem;
+    }
+
+    .contact .item.map .map_inner {
+        height: 320px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact .item.map .map_inner{
+        height: 250px;
+    }
+}
+
+@media (max-width: 599px) {
+    .contact .content h1 {
+        font-size: 3rem;
+    }
+
+    .contact .contact p {
+        font-size: 1rem;
+    }
+
+    .contact .item {
+        padding: 40px;
+    }
+
+    .contact .item h2 {
+        font-size: 3rem;
+    }
+
+    .contact .item a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 499px) {
+    .contact .item {
+        padding: 30px;
+    }
+
+    .contact .item a {
+        font-size: .9rem;
+    }
+}
+
+/* component contact csss ehrher e */
+
+.component {
+    margin-top: 5vw;
+}
+
+.component .image {
+    background-color: var(--accent);
+    color: var(--bg-color);
+    padding: 3vw 4vw;
+}
+
+.component .image h2 {
+    font-size: 3.5vw;
+    font-family: medium;
+    letter-spacing: .5px;
+    line-height: 100%;
+    margin-bottom: 0px;
+}
+
+.component .image img {
+    margin: 20px 0;
+}
+
+.component .image .icon {
+    font-size: 2.5vw;
+    margin-right: 20px;
+    color: var(--accent2);
+}
+
+.component .image h5 {
+    font-family: medium;
+    font-size: 2.5vw;
+    line-height: 100%;
+    letter-spacing: .5px;
+}
+
+.component .image a {
+    text-decoration: none;
+    font-size: 1.4vw;
+    color: var(--bg-color);
+    letter-spacing: .5px;
+    margin-bottom: 2px;
+    transition: all .5s ease;
+}
+
+.component .image a:hover {
+    color: var(--accent2);
+}
+
+.component .form_container {
+    padding: 0px 3vw;
+}
+
+.component .form_container h3 {
+    font-size: 3vw;
+    font-weight: 600;
+    color: var(--accent);
+    margin-bottom: 20px;
+    letter-spacing: -.5px;
+}
+
+.form_container p {
+    font-size: 1.2vw;
+    font-weight: 400;
+    margin: 0px;
+}
+
+.form_container a {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+@media (max-width: 999px) {
+    .component {
+        margin-top: 30px;
+    }
+
+    .component .image {
+        padding: 40px 50px;
+    }
+
+    .component .image h2 {
+        font-size: 3.5rem;
+    }
+
+    .component .image .icon {
+        font-size: 2.5rem;
+    }
+
+    .component .image h5 {
+        font-size: 2.5rem;
+    }
+
+    .component .image a {
+        font-size: 1.3rem;
+    }
+
+    .component .form_container {
+        padding: 0px 40px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .component .form_container h3 {
+        font-size: 2.5rem;
+    }
+
+    .form_container p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .component .form_container {
+        margin-top: 20px;
+        padding: 0px;
+    }
+}
